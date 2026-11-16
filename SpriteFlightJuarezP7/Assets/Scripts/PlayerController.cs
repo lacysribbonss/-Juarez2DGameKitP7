@@ -17,7 +17,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private Label scoreText;
     private Button restartButton;
 
-    public GameObject explosionEffect;
+   public GameObject explosionEffect;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -55,6 +56,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
         Destroy(gameObject);
         Instantiate(explosionEffect, transform.position, transform.rotation);
         restartButton.style.display = DisplayStyle.Flex;
+
+       
     }
 
     void ReloadScene()
